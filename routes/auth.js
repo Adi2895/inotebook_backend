@@ -17,23 +17,24 @@ const nodemailer = require("nodemailer")
 // create a user using: POSTv"/api/auth/createuser". no login required
 router.post("/createuser",
 
-    [
+//     [
 
     
-    // these isemail , isLength comes under express package
-    body('email', 'Enter a valid email').isEmail(),
-    body('name', 'Enter a valid name').isLength({ min: 2 }),
-    body('password', 'Password must be of minimum 7 characters').isLength({ min: 7 }),
-], async (req, res) => {
+//     // these isemail , isLength comes under express package
+//     body('email', 'Enter a valid email').isEmail(),
+//     body('name', 'Enter a valid name').isLength({ min: 2 }),
+//     body('password', 'Password must be of minimum 7 characters').isLength({ min: 7 }),
+// ], 
+async (req, res) => {
 
     
     let success = false
     // if there are errors , return the bad request and the errors
     
-    const errors = validationResult(req.body);
-    if (!errors.isEmpty()) {
-        return res.status(400).json({ success, errors: errors.array() });
-    }
+    // const errors = validationResult(req.body);
+    // if (!errors.isEmpty()) {
+    //     return res.status(400).json({ success, errors: errors.array() });
+    // }
     
     try {
         
@@ -74,7 +75,7 @@ router.post("/createuser",
 
         const mailoptions = {
             from :'jangraaditya11@gmail.com',
-            to:`${email}`,
+            to:`${req.body.email}`,
             subject:"Registration email",
             html:
 
