@@ -129,9 +129,6 @@ async (req, res) => {
 })
 
 
-
-
-
 // Route:2
 // authenticate a user using: POSTv"/api/auth/login". no login required
 router.post("/login", [
