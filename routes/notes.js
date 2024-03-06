@@ -3,9 +3,9 @@ const {fetchuser} = require('../middleware/fetchuser')
 const router = express.Router();
 const Note = require('../models/Note');
 
-const JWT_SECRET = 'Adityajangrais$a$good%$boy';
+// const JWT_SECRET = 'Adityajangrais$a$good%$boy';
 const { body, validationResult } = require('express-validator');
-const { Await } = require('react-router-dom');
+// const { Await } = require('react-router-dom');
 
 // Route : 1 Get all the notes: GET "/api/notes/fetchallnotes" , login required
 router.get("/fetchallnotes",
