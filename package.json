@@ -8,7 +8,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx nodemon server.js"
+    "start": "npx nodemon index.js"
   },
   "author": "",
   "license": "ISC",
@@ -20,8 +20,6 @@
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^7.5.2",
     "nodemailer": "^6.9.5",
-    "otp-generator": "^4.0.1",
-    "react": "^18.2.0",
-    "react-router-dom": "^6.16.0"
+    "otp-generator": "^4.0.1"
   }
 }
