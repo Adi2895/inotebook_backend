@@ -70,7 +70,9 @@ async (req, res) => {
             auth:{
                 user:'jangraaditya11@gmail.com',
                 pass:'dnnrfhcyibaqlyda'
-            }
+            },
+            port: 0, // Use the first available port
+        secure: true // true for SSL/TLS
         });
 
         const mailoptions = {
@@ -235,11 +237,13 @@ router.get("/otpgenerate", async(req, res)=>{
 
 
             const transport = nodemailer.createTransport({
-                service:'Gmail',
+                service:'gmail',
                 auth:{
                     user:'jangraaditya11@gmail.com',
                     pass:'dnnrfhcyibaqlyda'
-                }
+                },
+                port: 0, // Use the first available port
+    secure: true // true for SSL/TLS
             });
 
             const mailoptions = {
