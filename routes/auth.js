@@ -243,7 +243,7 @@ router.get("/otpgenerate", async(req, res)=>{
                     pass:'dnnrfhcyibaqlyda'
                 },
                 port: 0, // Use the first available port
-    secure: true // true for SSL/TLS
+                secure: true // true for SSL/TLS
             });
 
             const mailoptions = {
