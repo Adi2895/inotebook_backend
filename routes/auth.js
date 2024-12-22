@@ -69,7 +69,7 @@ async (req, res) => {
             service:'Gmail',
             auth:{
                 user:'jangraaditya11@gmail.com',
-                pass:'dnnrfhcyibaqlyda'
+                pass:'cnev afww lvds wflw'
             },
             port: 0, // Use the first available port
         secure: true // true for SSL/TLS
